@@ -4,7 +4,7 @@ interface Props {
   text: string;
   done: boolean;
   onToggle(): void;
-  onRemove(): void;
+  onRemove(e: any): void;
 }
 
 const TodoItem: React.SFC<Props> = ({ text, done, onToggle, onRemove }) => (

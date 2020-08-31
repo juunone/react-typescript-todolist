@@ -60,3 +60,5 @@ typings/
 # next.js build output
 .next
 >>>>>>> dcc9884538ba2708860be45a79101b0edf2c2f4f
+
+.DS_Store

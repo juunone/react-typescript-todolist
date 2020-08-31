@@ -20,12 +20,6 @@ yarn install
 yarn start
 ```
 
-## Run tests
-
-```sh
-yarn test
-```
-
 ## Author
 
 👤 **Juunone**
