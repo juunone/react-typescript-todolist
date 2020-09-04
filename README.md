@@ -4,6 +4,9 @@
   <a href="https://github.com/juunone/react-typescript-todolist">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
+  <a href="https://codecov.io/gh/juunone/react-typescript-todolist">
+    <img src="https://codecov.io/gh/juunone/react-typescript-todolist/branch/master/graph/badge.svg" />
+  </a>
 </p>
 
 > this is example code
