@@ -46,13 +46,13 @@ export type TodoActionTypes =
   | CreateAction
   | RemoveAction
   | ToggleAction
-  | ChangeInputAction;
+  | ChangeInputAction
 
 // actions
 
 let autoId = 0;
 
-function create(text: string) {
+export function create(text: string) {
   return {
     type: CREATE,
     payload: {
@@ -63,7 +63,7 @@ function create(text: string) {
   };
 }
 
-function remove(id: number) {
+export function remove(id: number) {
   return {
     type: REMOVE,
     meta: {
@@ -72,7 +72,7 @@ function remove(id: number) {
   };
 }
 
-function toggle(id: number) {
+export function toggle(id: number) {
   return {
     type: TOGGLE,
     meta: {
@@ -81,7 +81,7 @@ function toggle(id: number) {
   };
 }
 
-function changeInput(input: string) {
+export function changeInput(input: string) {
   return {
     type: CHANGE_INPUT,
     meta: {
@@ -104,10 +104,7 @@ const initialState: TodoState = {
   input: ""
 };
 
-export function todoReducer(
-  state = initialState,
-  action: TodoActionTypes
-): TodoState {
+export function todoReducer(state = initialState,action: TodoActionTypes): TodoState {
   switch (action.type) {
     case CREATE:
       return {
